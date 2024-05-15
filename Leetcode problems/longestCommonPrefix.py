@@ -25,6 +25,16 @@ def prefixFinderV(strs):
                 return strs[0][0:i]
     return strs[0]
 prefixFinderV(strs)
-            
-    
-    
+
+
+#using string slicing 
+def longestCommonPrefix(strs):
+    strs = sorted(strs)
+    ans = ""
+    first = strs[0]
+    last = strs[-1]
+    for i in range(min(len(first), len(last))):
+        if first[i] != last[i]:
+            return ans
+        ans+= first[i]            
+    return ans
