@@ -1,0 +1,10 @@
+s = "coaching"
+t = "coachd"
+def num_text(s,t):
+    count = 0
+    for i in t:
+        if i not in s:
+            count+=1
+    return count
+            
+num_text(s,t)
