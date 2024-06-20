@@ -48,4 +48,3 @@ max_capital(k,w,profits,capital)
 #                 break
 #             w -= heap.heappop(maxHeap)[0]
 #         return w
-        
